@@ -10,18 +10,18 @@ public class MascotAPP {
 
         ServiceMascota sm = new ServiceMascota();
 
-        sm.fabricaMascota(2);
+
+        sm.fabricaMascota(Integer.MAX_VALUE);
 
         sm.mostrarMascotas();
 
-        sm.actualizarMascota(0);
-
-        sm.mostrarMascotas();
-
-        sm.eliminiarMascota(3);
-        
-        sm.mostrarMascotas();
-
+//        sm.actualizarMascota(0);
+//
+//        sm.mostrarMascotas();
+//
+//        sm.eliminiarMascota(3);
+//        
+//        sm.mostrarMascotas();
     }
 
 }
