@@ -55,53 +55,50 @@ public class ServiceMascota {
 
     }
 
-    /**
-     * Crea mascotas pidiendo por teclado
-     *
-     * @param cantidad
-     */
+
     public void fabricaMascota(int cantidad) {
         for (int i = 0; i < cantidad; i++) {
             Mascota mascotaCreada = crearMascota();
-            System.out.println("Quisiera agregar otra mascotas?  S/N");
-            System.out.println("Si no agrega mas mascotas saldra del programa");
-            String respuesta = leer.next();
-            if ("S".equals(respuesta)) {
-                agregarMascota(mascotaCreada);
-            } else {
-                System.out.println("Esperamos que regrese Pronto");
-                System.out.println(mascotaCreada.toString());
+//            System.out.println("Quisiera agregar otra mascotas?  S/N");
+//            System.out.println("Si no agrega mas mascotas saldra del programa");
+//            String respuesta = leer.next();
+//            if ("S".equals(respuesta)) {
+            agregarMascota(mascotaCreada);
+//            } else {
+//                System.out.println("Esperamos que regrese Pronto");
+            System.out.println(mascotaCreada.toString());
 
-            }
         }
     }
 
-    //TODO Añadir Try adn Catch
+//TODO Añadir Try and Catch
 //    public void actualizarMascota(int index) {
 //        Mascota m = mascotas.get(index);
 //        m.setApodo("Roberto");
-//        
-//    }
-//    public void actualizarMascota(int index) {
-//
-//        if (index >= (mascotas.size() - 1)) {
-//            System.out.println("");
-//            System.out.println("-----------Actualizar-------------");
-//
-//            Mascota m = crearMascota();
-//
-//            mascotas.set(index, m);
-//        } else {
-//            System.out.println("FAllo al Elimniar El indice es erroneo");
-//        }
-//    }
-//    public void eliminiarMascota(int index) {
-//
-//        if (index <= (mascotas.size() - 1)) {
-//            mascotas.remove(index);
-//        } else {
-//            System.out.println("Fallo al Eliminar El indice es erroneo");
-//        }
 //
 //    }
+
+    public void actualizarMascota(int index) {
+        if (index >= (mascotas.size() - 1)) {
+            System.out.println("");
+            System.out.println("-----------Actualizar-------------");
+
+            Mascota m = crearMascota();
+
+            mascotas.set(index, m);
+        } else {
+            System.out.println("FAllo al Elimniar El indice es erroneo");
+        }
+    }
+
+
+    public void eliminiarMascota(int index) {
+
+        if (index <= (mascotas.size() - 1)) {
+            mascotas.remove(index);
+        } else {
+            System.out.println("Fallo al Eliminar El indice es erroneo");
+        }
+
+    }
 }
