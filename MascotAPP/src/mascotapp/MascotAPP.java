@@ -2,14 +2,13 @@ package mascotapp;
 
 import java.util.Scanner;
 import mascotapp.entidades.Mascota;
-import mascotapp.service.ServiceMascota;
+import mascotapp.servicios.ServicioMascota;
 
 public class MascotAPP {
 
     public static void main(String[] args) {
 
-        ServiceMascota sm = new ServiceMascota();
-
+        ServicioMascota sm = new ServicioMascota();
 
         sm.fabricaMascota(Integer.MAX_VALUE);
 

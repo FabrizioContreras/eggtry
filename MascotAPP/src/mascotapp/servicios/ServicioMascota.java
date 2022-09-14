@@ -1,16 +1,16 @@
-package mascotapp.service;
+package mascotapp.servicios;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 import mascotapp.entidades.Mascota;
 
-public class ServiceMascota {
+public class ServicioMascota {
 
     private Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
     private ArrayList<Mascota> mascotas;
 
-    public ServiceMascota() {
+    public ServicioMascota() {
         this.mascotas = new ArrayList();
     }
 
@@ -87,7 +87,7 @@ public class ServiceMascota {
 
             mascotas.set(index, m);
         } else {
-            System.out.println("FAllo al Elimniar El indice es erroneo");
+            System.out.println("Fallo al Elimniar El indice es erroneo");
         }
     }
 

@@ -4,7 +4,6 @@ public class Mascota {
 
     private String nombre;
     private String apodo;
-    //conejo,gato,perro,loro,camaleon,carpincho
     private String tipo;
     private String color;
     private Integer edad;
@@ -14,6 +13,14 @@ public class Mascota {
 
     public Mascota() {
     }
+
+    public Mascota(String nombre, String apodo, String tipo) {
+        this.nombre = nombre;
+        this.apodo = apodo;
+        this.tipo = tipo;
+    }
+
+
 
 
 }
